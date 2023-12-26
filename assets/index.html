@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-top mycontainer">
+            <div class="header-logo">
+                <h2>TechnoStore</h2>
+            </div>
+            <div class="header-icons">
+                <span id="currentUser"></span>
+                <a href="./wishlist.html"><i id="heartIcon" class="fa-regular fa-heart"></i></a>
+                <a href="./cart.html"><i id="cartIcon" class="fa-solid fa-cart-shopping"></i></a>
+                <span class="login-control"></span>
+                <div class="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="burger-menu-items">
+                    <a id="burgerHeartIcon" href="./wishlist.html"><i class="fa-regular fa-heart"></i> Wishlist</a>
+                    <a id="burgerCartIcon" href="./cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                    <span id="burgerCurrentUser"></span>
+                    <span id="burgerLoginControl"></span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="mycontainer">
+                <div class="nav-elements">
+                    <a href="./index.html">Ana səhifə</a>
+                    <a href="./cart.html">Səbət</a>
+                </div>
+                <div class="search-input">
+                    <input type="text" placeholder="Axtarış..." oninput="productSearch()">
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-content-image"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-content-image"></div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="mycontainer">
+        <div class="recommend-for-you">
+            <div class="recommended-products-container">
+                <div class="recommendedproducts-header f-products-header">
+                    <h3>Populyar məhsullar</h3>
+                    <div class="f-categories-txt">
+                        <a href=""><span>Daha çox <i class="fa-solid fa-chevron-right"></i></span></a>
+                    </div>
+                </div>
+                <div class="popular-products">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ps5-banner discover-more">
+        <div class="ps5-banner-text discover-more-text">
+            <h2>PlayStation 5</h2>
+            <p class="mavic3-desc">
+                Zəmanətli oyun təcrübəsi və əla qrafika ilə tanış olun, əyləncəni yeni səviyyəyə qaldırın!
+            </p>
+            <a href="" class="discovermore-btn" onclick="addToCart(1)">İndi Al<i
+                    class="fa-solid fa-chevron-right"></i></a>
+        </div>
+    </div>
+    <div class="mycontainer">
+        <div class="featured-products">
+            <div class="f-products-header">
+                <h3>Sizə özəl</h3>
+                <div class="f-product-categories">
+                    <span class="f-category">Hamısı</span>
+                    <span class="f-category">Smartfonlar</span>
+                    <span class="f-category">Noutbuklar</span>
+                    <span class="f-category">TV</span>
+                    <span class="f-category">Qulaqlıqlar</span>
+                    <span class="f-category">Aksessuarlar</span>
+                </div>
+            </div>
+
+            <div class="recommendedproducts">
+            </div>
+        </div>
+        <div class="featured-categories">
+            <div class="f-products-header">
+                <h3>Ən çox baxılanlar</h3>
+                <div class="f-categories-txt">
+                    <a href="#"><span>Daha çox <i class="fa-solid fa-chevron-right"></i></span></a>
+                </div>
+            </div>
+            <div class="f-category-minicards" id="categoryContainer"></div>
+        </div>
+    </div>
+    <div class="discover-more">
+        <div class="discover-more-text">
+            <h2>LEGO Creator Cyber Drone / 31111</h2>
+            <p class="mavic3-desc">
+                Güclü funksiyalar və dərin perspektiv üçün əlverişli olan dronlar, səyahətinizi unudulmaz edir.
+            </p>
+            <a href="#" class="discovermore-btn" onclick="addToCart(2)">İndi Al <i
+                    class="fa-solid fa-chevron-right"></i></a>
+        </div>
+    </div>
+    <div class="newsletter">
+        <div class="mycontainer">
+            <h2><i class="fa-regular fa-paper-plane"></i> Xəbərlərimizə abunə olun</h2>
+            <span>Yeni məhsullar, endirimlər və daha çox haqqında məlumat üçün bizim üçün email alın.</span>
+            <div class="email-input">
+                <input type="email" placeholder="Sizin email ünvanınız">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+    </div>
+    <div class="brands mycontainer">
+        <img src="./images/SamsungLogo.png" alt="">
+        <img src="./images/Asus.png" alt="">
+        <img src="./images/Gorenje.png" alt="">
+        <img src="./images/Huaweinewlogo.png" alt="">
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Haqqımızda</h3>
+                <p class="footer-info">TechnoStore.az müştərilərə keyfiyyətli və unikal məhsullar təqdim etməyə həsr olunmuş onlayn
+                    satıcıdır. Biz müştərilərimizə rahat və sürətli alış-veriş imkanları təmin edirik, çünki sizin
+                    bəyənəcəyiniz məhsulları tapmağınız üçün buradayıq.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Bizimlə Əlaqə</h3>
+                <p>Email: sabirmextiev05@gmail.com</p>
+                <p>Telefon: +994 00 000 00 00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Bizi İzləyin</h3>
+                <p>Sosial mediada ən son yeniliklər və təkliflər üçün bizi izləyin.</p>
+                <a href="https://www.linkedin.com/in/sabirmehdiyev">LinkedIn</a> |
+                <a href="https://www.linkedin.com/in/sabirmehdiyev">Facebook</a> |
+                <a href="https://www.linkedin.com/in/sabirmehdiyev">Instagram</a>
+            </div>
+        </div>
+        <p>TechnoStore.az , Bütün hüquqlar qorunur.</p>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

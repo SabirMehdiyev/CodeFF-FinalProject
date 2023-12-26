@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header-top mycontainer">
+            <div class="header-logo">
+                <h2>TechnoStore</h2>
+            </div>
+            <div class="header-icons">
+                <span id="currentUser"></span>
+                <a href="./wishlist.html"><i id="heartIcon" class="fa-regular fa-heart"></i></a>
+                <a href="./cart.html"><i id="cartIcon" class="fa-solid fa-cart-shopping"></i></a>
+                <span class="login-control"></span>
+                <!-- Burger menu -->
+                <div class="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- Burger menu items -->
+                <div class="burger-menu-items">
+                    <a id="burgerHeartIcon" href="./wishlist.html"><i class="fa-regular fa-heart"></i> Wishlist</a>
+                    <a id="burgerCartIcon" href="./cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                    <span id="burgerCurrentUser"></span>
+                    <span id="burgerLoginControl"></span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="mycontainer">
+                <div class="nav-elements">
+                    <a href="./index.html">Ana səhifə</a>
+                    <a href="./cart.html">Səbət</a>
+                </div>
+                <div class="search-input">
+                    <input type="text" placeholder="Axtarış..." oninput="productSearch()">
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="login-section" class="logincontainer">
+        <form class="form" onsubmit="login(event)">
+            <h1>Daxil ol</h1>
+            <div class="form-group">
+                <label for="username" class="form-label">İstifadəçi adı</label>
+                <input type="text" id="username"  class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Şifrə</label>
+                <input type="password" id="password"  class="form-input" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="showPassword" onclick="toggleShowPassword()">
+                <label for="showPassword">Şifəni göstər</label>
+            </div>
+            <button  id="loginButton" class="form-button">Daxil ol</button>
+            <a href="./register.html" class="form-link">Qeydiyyat</a>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Haqqımızda</h3>
+                <p class="footer-info">TechnoStore.az müştərilərə keyfiyyətli və unikal məhsullar təqdim etməyə həsr olunmuş onlayn
+                    satıcıdır. Biz müştərilərimizə rahat və sürətli alış-veriş imkanları təmin edirik, çünki sizin
+                    bəyənəcəyiniz məhsulları tapmağınız üçün buradayıq.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Bizimlə Əlaqə</h3>
+                <p>Email: sabirmextiev05@gmail.com</p>
+                <p>Telefon: +994 00 000 00 00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Bizi İzləyin</h3>
+                <p>Sosial mediada ən son yeniliklər və təkliflər üçün bizi izləyin.</p>
+                <a href="https://www.linkedin.com/in/sabirmehdiyev">LinkedIn</a> |
+                <a href="https://www.linkedin.com/in/sabirmehdiyev">Facebook</a> |
+                <a href="https://www.linkedin.com/in/sabirmehdiyev">Instagram</a>
+            </div>
+        </div>
+        <p>TechnoStore.az , Bütün hüquqlar qorunur.</p>
+    </div>
+
+
+    <script src="./js/login.js"></script>
+</body>
+</html>

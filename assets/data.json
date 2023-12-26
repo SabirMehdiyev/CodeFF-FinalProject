@@ -1,0 +1,197 @@
+
+{
+    "Products": [
+        {
+            "Id": 1,
+            "Title": "Iphone X",
+            "category": "Smartfonlar",
+            "description": "A powerful and sleek smartphone.",
+            "price": 549.99,
+            "stock": 100,
+            "image": "./images/iphone15.png",
+            "rating": 2.2
+        },
+        {
+            "Id": 2,
+            "Title": "Samsung Galaxy S23 Ultra",
+            "category": "Smartfonlar",
+            "description": "A powerful and sleek smartphone.",
+            "price": 499.99,
+            "stock": 100,
+            "image": "./images/s23.png",
+            "rating": 3.8
+        },
+        {
+            "Id": 3,
+            "Title": "Lenovo Legion 7",
+            "category": "Noutbuklar",
+            "description": "Introducing our latest laptop, a sleek and powerful device designed for ultimate productivity. With lightning-fast processing, ample storage, and a stunning display, it's the perfect companion for work and play",
+            "price": 2999.99,
+            "stock": 100,
+            "image": "./images/Asus2.png",
+            "rating": 4.9
+        },
+        {
+            "Id": 4,
+            "Title": "Lenovo Legion 5",
+            "category": "Noutbuklar",
+            "description": "Introducing our latest laptop, a sleek and powerful device designed for ultimate productivity. With lightning-fast processing, ample storage, and a stunning display, it's the perfect companion for work and play",
+            "price": 2999.99,
+            "stock": 100,
+            "image": "./images/rog-strix.png",
+            "rating": 4.9
+        },
+        {
+            "Id": 5,
+            "Title": " MacBook Pro 16 Silver",
+            "category": "Noutbuklar",
+            "description": "Introducing our latest laptop, a sleek and powerful device designed for ultimate productivity. With lightning-fast processing, ample storage, and a stunning display, it's the perfect companion for work and play",
+            "price": 4999.99,
+            "stock": 100,
+            "image": "./images/macbook.png",
+            "rating": 4.9
+        },
+        {
+            "Id": 6,
+            "Title": "Iphone 12",
+            "category": "Smartfonlar",
+            "description": "A powerful and sleek smartphone.",
+            "price": 549.99,
+            "stock": 100,
+            "image": "./images/iphone15.png",
+            "rating": 4.4
+        },
+        {
+            "Id": 7,
+            "Title": "Televizor Samung Neo QLED 8k",
+            "category": "TV",
+            "description": "A powerful and sleek smartphone.",
+            "price": 4099.99,
+            "stock": 100,
+            "image": "./images/TvSamsung.png",
+            "rating": 3.8
+        },
+        {
+            "Id": 8,
+            "Title": "Asus ROG Strix G15",
+            "category": "Noutbuklar",
+            "description": "Introducing our latest laptop, a sleek and powerful device designed for ultimate productivity. With lightning-fast processing, ample storage, and a stunning display, it's the perfect companion for work and play",
+            "price": 2999.99,
+            "stock": 100,
+            "image": "./images/Asus2.png",
+            "rating": 4.9
+        },
+        {
+            "Id": 9,
+            "Title": "Lenovo Legion 7",
+            "category": "Noutbuklar",
+            "description": "Introducing our latest laptop, a sleek and powerful device designed for ultimate productivity. With lightning-fast processing, ample storage, and a stunning display, it's the perfect companion for work and play",
+            "price": 2999.99,
+            "stock": 100,
+            "image": "./images/Legion.png",
+            "rating": 4.9
+        },
+        {
+            "Id": 10,
+            "Title": "Asus VivoBook",
+            "category": "Noutbuklar",
+            "description": "Introducing our latest laptop, a sleek and powerful device designed for ultimate productivity. With lightning-fast processing, ample storage, and a stunning display, it's the perfect companion for work and play",
+            "price": 2999.99,
+            "stock": 100,
+            "image": "./images/VivoBook.png",
+            "rating": 4.9
+        },
+        {
+            "Id": 11,
+            "Title": "Asus ROG Strix G15 G513RW-HQ198",
+            "category": "Noutbuklar",
+            "description": "Introducing our latest laptop, a sleek and powerful device designed for ultimate productivity. With lightning-fast processing, ample storage, and a stunning display, it's the perfect companion for work and play",
+            "price": 2999.99,
+            "stock": 100,
+            "image": "./images/Asus2.png",
+            "rating": 4.9
+        },
+        {
+            "Id": 12,
+            "Title": "Lenovo Legion 7",
+            "category": "Noutbuklar",
+            "description": "Introducing our latest laptop, a sleek and powerful device designed for ultimate productivity. With lightning-fast processing, ample storage, and a stunning display, it's the perfect companion for work and play",
+            "price": 2399.99,
+            "stock": 100,
+            "image": "./images/macbook.png",
+            "rating": 4.9
+        },
+        {
+            "Id": 13,
+            "Title": "Asus ROG Strix G15 G513RW-HQ198",
+            "category": "Noutbuklar",
+            "description": "Introducing our latest laptop, a sleek and powerful device designed for ultimate productivity. With lightning-fast processing, ample storage, and a stunning display, it's the perfect companion for work and play",
+            "price": 2999.99,
+            "stock": 100,
+            "image": "./images/Asus2.png",
+            "rating": 4.9
+        },
+        {
+            "Id": 14,
+            "Title": "Lenovo Legion 7",
+            "category": "Noutbuklar",
+            "description": "Introducing our latest laptop, a sleek and powerful device designed for ultimate productivity. With lightning-fast processing, ample storage, and a stunning display, it's the perfect companion for work and play",
+            "price": 2999.99,
+            "stock": 100,
+            "image": "./images/rog-strix.png",
+            "rating": 4.9
+        },
+        {
+            "Id": 15,
+            "Title": "Google Pixel",
+            "category": "Smartfonlar",
+            "description": "A powerful and sleek smartphone.",
+            "price": 499.99,
+            "stock": 100,
+            "image": "./images/pixel.png",
+            "rating": 3.8
+        }
+    ],
+    "Categories": [
+        {
+            "Name": "Smartfonlar",
+            "Image": "./images/SmartphoneCategory.png"
+        },
+        {
+            "Name": "Kameralar",
+            "Image": "./images/cameras-f-category.webp"
+        },
+        {
+            "Name": "TV",
+            "Image": "./images/Television-f-category.png"
+        },
+        {
+            "Name": "Oyun",
+            "Image": "./images/Gaming-f-category.webp"
+        },
+        {
+            "Name": "Dinamiklər",
+            "Image": "./images/Speaker-f-category.webp"
+        },
+        {
+            "Name": "Noutbuklar",
+            "Image": "./images/Notebook-f-category.webp"
+        },
+        {
+            "Name": "Qulaqlıqlar",
+            "Image": "./images/Headphone-f-category.webp"
+        },
+        {
+            "Name": "Məişət texnikası",
+            "Image": "./images/Washers-f-category.webp"
+        },
+        {
+            "Name": "Soyuducular",
+            "Image": "./images/Refrigerator-f-category.png"
+        },
+        {
+            "Name": "Aksessuarlar",
+            "Image": "./images/Accessories-f-category.webp"
+        }
+    ]
+}

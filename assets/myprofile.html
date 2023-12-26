@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/myprofile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="header-top mycontainer">
+            <div class="header-logo">
+                <h2>TechnoStore</h2>
+            </div>
+            <div class="header-icons">
+                <span id="currentUser"></span>
+                <a href="./wishlist.html"><i id="heartIcon" class="fa-regular fa-heart"></i></a>
+                <a href="./cart.html"><i id="cartIcon" class="fa-solid fa-cart-shopping"></i></a>
+                <span class="login-control"></span>
+                <!-- Burger menu -->
+                <div class="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- Burger menu items -->
+                <div class="burger-menu-items">
+                    <a id="burgerHeartIcon" href="./wishlist.html"><i class="fa-regular fa-heart"></i> Wishlist</a>
+                    <a id="burgerCartIcon" href="./cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                    <span id="burgerCurrentUser"></span>
+                    <span id="burgerLoginControl"></span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="mycontainer">
+                <div class="nav-elements">
+                    <a href="./index.html">Ana səhifə</a>
+                    <a href="./cart.html">Səbət</a>
+                </div>
+                <div class="search-input">
+                    <input type="text" placeholder="Axtarış..." oninput="productSearch()">
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="myprofile-container">
+        <div id="profile-container">
+            <div class="profile-header">
+                <div class="profile-h-left">
+                    <div class="user-icon"></div>
+                    <h2><i class="fa-regular fa-user"></i>Mənim Hesabım</h2>
+                </div>
+                <button class="edit-profile-btn" onclick="showEditProfile()" >Profili redaktə et</button>
+            </div>
+    
+            <div class="user-info">
+                <img src="./images/profileImg.jpeg" alt="Profile Picture">
+                <div class="user-details">
+                    <h2 id="user-fullname">Sabir Mehdiyev</h2>
+                    <p id="user-mail">Email: sabirmextiev05@gmail.com</p>
+                    <p>Qeydiyyat: Sentyabr 2023</p>
+                    <p id="user-birthdate">Doğum tarixi: 24.02.2004</p>
+                </div>
+    
+                <div class="order-history">
+                    <h2>Son Sifariş</h2>
+    
+                    <div class="order">
+                        <div class="order-info">
+                            <p class="order-date">Sifariş tarixi: Jan 15, 2023</p>
+                            <p class="order-total">Məbləğ: $99.99</p>
+                        </div>
+                        <div class="order-products">
+                            Sifariş ID:#035SN0224
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="favorites">
+                <h2><i class="fa-regular fa-heart"></i>Seçilmiş məhsullar</h2>
+            </div>
+        </div>
+        <div id="edit-profile-container">
+            <div class="profile-header">
+                <div class="profile-h-left">
+                    <h2>Profili Redaktə et</h2>
+                </div>
+            </div>
+            <form id="edit-profile-form">
+                <label for="edit-fullname">Ad,Soyad:</label>
+                <input type="text" id="edit-fullname" name="edit-fullname" required>
+        
+                <label for="edit-email">Email:</label>
+                <input type="email" id="edit-email" name="edit-email" required>
+        
+                <label for="edit-birthdate">Doğum tarixi:</label>
+                <input type="date" id="edit-birthdate" name="edit-birthdate" required>
+        
+                <button class="edit-profile-btn" type="button" onclick="saveChanges(event)">Yadda saxla</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Haqqımızda</h3>
+                <p class="footer-info">TechnoStore.az müştərilərə keyfiyyətli və unikal məhsullar təqdim etməyə həsr olunmuş onlayn
+                    satıcıdır. Biz müştərilərimizə rahat və sürətli alış-veriş imkanları təmin edirik, çünki sizin
+                    bəyənəcəyiniz məhsulları tapmağınız üçün buradayıq.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Bizimlə Əlaqə</h3>
+                <p>Email: sabirmextiev05@gmail.com</p>
+                <p>Telefon: +994 00 000 00 00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Bizi İzləyin</h3>
+                <p>Sosial mediada ən son yeniliklər və təkliflər üçün bizi izləyin.</p>
+                <a href="https://www.linkedin.com/in/sabirmehdiyev">LinkedIn</a> |
+                <a href="https://www.linkedin.com/in/sabirmehdiyev">Facebook</a> |
+                <a href="https://www.linkedin.com/in/sabirmehdiyev">Instagram</a>
+            </div>
+        </div>
+        <p>TechnoStore.az , Bütün hüquqlar qorunur.</p>
+    </div>
+
+
+    <script src="./js/myprofile.js"></script>
+</body>
+
+</html>

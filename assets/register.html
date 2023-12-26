@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="header-top mycontainer">
+            <div class="header-logo">
+                <h2>TechnoStore</h2>
+            </div>
+            <div class="header-icons">
+                <span id="currentUser"></span>
+                <a href="./wishlist.html"><i id="heartIcon" class="fa-regular fa-heart"></i></a>
+                <a href="./cart.html"><i id="cartIcon" class="fa-solid fa-cart-shopping"></i></a>
+                <span class="login-control"></span>
+                <!-- Burger menu -->
+                <div class="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- Burger menu items -->
+                <div class="burger-menu-items">
+                    <a id="burgerHeartIcon" href="./wishlist.html"><i class="fa-regular fa-heart"></i> Wishlist</a>
+                    <a id="burgerCartIcon" href="./cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                    <span id="burgerCurrentUser"></span>
+                    <span id="burgerLoginControl"></span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="mycontainer">
+                <div class="nav-elements">
+                    <a href="./index.html">Ana səhifə</a>
+                    <a href="./cart.html">Səbət</a>
+                </div>
+                <div class="search-input">
+                    <input type="text" placeholder="Axtarış..." oninput="productSearch()">
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="register-section" class="registercontainer logincontainer">
+        <form id="registration-form" class="form" onsubmit="register(event)">
+            <h1>Qeydiyyat</h1>
+            <div class="form-group">
+                <label for="fullname" class="form-label">Ad, Soyad</label>
+                <input type="text" id="fullname" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="register-username" class="form-label">istifadəçi adı</label>
+                <input type="text" id="register-username" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="register-email" class="form-label">Email</label>
+                <input type="email" id="register-email" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="register-password" class="form-label">Şifrə</label>
+                <input type="password" id="register-password" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="repeat-password" class="form-label">Təkrar şifrə</label>
+                <input type="password" id="repeat-password" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="showPassword" onclick="toggleShowPassword()">
+                <label for="showPassword">Şifrəni göstər</label>
+            </div>
+            <div class="form-group">
+                <label for="birthdate" class="form-label">Doğum tarixi:</label>
+                <input type="date" id="birthdate" class="form-input" required>
+            </div>
+
+            <button id="registerButton" class="form-button">Qeydiyyat</button>
+            <a href="login.html" class="form-link">Hesabınız var?Daxil olun</a>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Haqqımızda</h3>
+                <p class="footer-info">TechnoStore.az müştərilərə keyfiyyətli və unikal məhsullar təqdim etməyə həsr olunmuş onlayn
+                    satıcıdır. Biz müştərilərimizə rahat və sürətli alış-veriş imkanları təmin edirik, çünki sizin
+                    bəyənəcəyiniz məhsulları tapmağınız üçün buradayıq.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Bizimlə Əlaqə</h3>
+                <p>Email: sabirmextiev05@gmail.com</p>
+                <p>Telefon: +994 00 000 00 00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Bizi İzləyin</h3>
+                <p>Sosial mediada ən son yeniliklər və təkliflər üçün bizi izləyin.</p>
+                <a href="https://www.linkedin.com/in/sabirmehdiyev">LinkedIn</a> |
+                <a href="https://www.linkedin.com/in/sabirmehdiyev">Facebook</a> |
+                <a href="https://www.linkedin.com/in/sabirmehdiyev">Instagram</a>
+            </div>
+        </div>
+        <p>TechnoStore.az , Bütün hüquqlar qorunur.</p>
+    </div>
+
+    <script src="./js/register.js"></script>
+</body>
+
+</html>
+
